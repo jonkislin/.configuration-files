@@ -1,0 +1,14 @@
+" Manage plugins
+source ~/.vim/plugins.vim
+
+" Set key mappings
+source ~/.vim/mappings.vim
+
+set hidden " allow multiple unsaved buffers
+set number " number all lines
+syntax enable " syntax highlighting
+
+" Set color scheme
+set background=light
+let g:solarized_termcolors=256
+colorscheme solarized
