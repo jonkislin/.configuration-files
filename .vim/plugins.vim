@@ -10,7 +10,13 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'altercation/vim-colors-solarized'
 Plug 'google/vim-maktaba'
-Plug 'google/vim-codefmt'
+Plug 'google/vim-codefmt', { 'on': 'FormatLines' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'mileszs/ack.vim', { 'on': 'Ack' }
+Plug 'jeetsukumaran/vim-buffergator'
 
 call plug#end()
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
