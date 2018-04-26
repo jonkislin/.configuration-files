@@ -11,5 +11,5 @@ ln -s $CONFIG_ROOT/.zshrc ~/.zshrc
 ln -s $CONFIG_ROOT/.dir_colors ~/.dir_colors
 
 # Setup vim
-vim --version
+vim +PlugInstall +qa
 
