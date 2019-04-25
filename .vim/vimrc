@@ -6,7 +6,13 @@ source ~/.vim/mappings.vim
 
 set hidden " allow multiple unsaved buffers
 set number " number all lines
+set incsearch " highlight search while typing
 syntax enable " syntax highlighting
+
+filetype plugin indent on
+set tabstop=4 " show tabs as 4 spaces
+set shiftwidth=4 " indent with '>' adds 4 spaces
+set expandtab " expand tab to spaces
 
 " Set color scheme
 set background=light
