@@ -4,6 +4,8 @@ source ~/.vim/plugins.vim
 " Set key mappings
 source ~/.vim/mappings.vim
 
+set mouse=a " allow mouse
+
 set hidden " allow multiple unsaved buffers
 set number " number all lines
 set incsearch " highlight search while typing
@@ -15,6 +17,7 @@ set shiftwidth=4 " indent with '>' adds 4 spaces
 set expandtab " expand tab to spaces
 
 " Set color scheme
-set background=light
+set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
+
