@@ -1,0 +1,35 @@
+# this file
+alias aliaser='nano ~/.aliases'
+ 
+# zshell rc 
+alias zconfig='nano ~/.zshrc'
+alias zsource='source ~/.zshrc'
+
+# reminder file
+alias remember='nano ~/.remember'
+alias remind='less ~/.remember'
+
+# colorized cat
+alias ccat='pygmentize -g'
+
+# extra git not included in ohmyzsh
+alias gcam='git commit -am'
+alias gccm='git commit -m'
+
+# tmux
+alias tmuxa='tmux a -t'
+alias tmuxn='tmux new-session -s'
+alias tmuxl='tmux ls'
+alias tmuxls='tmux ls'
+alias tmouse='tmux set -g mouse on'
+
+# nano 
+alias nano=/usr/local/bin/nano
+
+# aws jonTest
+alias scjt='aws ec2 start-instances --instance-ids i-092c586b515887c38 && ssh -i "~/.ssh/jonTest.pem" ubuntu@ec2-52-207-87-139.compute-1.amazonaws.com'
+alias sjt='aws ec2 start-instances --instance-ids i-092c586b515887c38'
+alias cjt='ssh -i "~/.ssh/jonTest.pem" ubuntu@ec2-52-207-87-139.compute-1.amazonaws.com'
+alias xjt='aws ec2 stop-instances --instance-ids i-092c586b515887c38'
+alias ijt='aws ec2 describe-instances'
+
