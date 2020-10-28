@@ -3,13 +3,13 @@
 # Move to your home folder
 cd $HOME/.opineconfig
 
-# Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# Install oh-my-zsh in the background
+nohup \
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" \
+    &>/dev/null & 
 
 # Install custom zsh theme: lambda-gitster
 git clone https://github.com/ergenekonyigit/lambda-gitster.git
-cd lambda-gitster
-cp lambda-gitster.zsh-theme ~/.oh-my-zsh/custom/themes
 
 # Symlink everything
 ln -sf ./.vim ~/.vim
@@ -22,3 +22,6 @@ vim +PlugInstall +qa
 
 # Source zsh config, which handles all else
 source ~/.zshrc
+
+# Put the lambda-gitster theme into the newly created ~/.oh-my-zsh folder
+cp lambda-gitster/lambda-gitster.zsh-theme ~/.oh-my-zsh/custom/themes
